@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kinda_white"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_coffee"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".85"
+        android:padding="8dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".15">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_order"
+            android:layout_width="338dp"
+            android:layout_height="47dp"
+            android:fontFamily="casual"
+            android:text="@string/order"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/kinda_rose"
+            android:textSize="18sp"
+            app:backgroundTint="@color/kinda_brown"
+            app:cornerRadius="24.5dp"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+</LinearLayout>
